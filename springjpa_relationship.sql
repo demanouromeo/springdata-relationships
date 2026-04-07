@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 07 avr. 2026 à 03:30
+-- Généré le : mar. 07 avr. 2026 à 16:53
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.0.30
 
@@ -42,7 +42,9 @@ CREATE TABLE `applicant` (
 INSERT INTO `applicant` (`id`, `name`, `email`, `phone`, `status`) VALUES
 (1, 'Peter', 'bertin@gmail.com', '4182613537', 'pending'),
 (2, 'Rambo2', 'asslrom@gmail.com', '5122649853', 'updating'),
-(3, 'Anodol', 'metalonfge@gmail.com', '4182649256', 'pending');
+(3, 'Anodol', 'metalonfge@gmail.com', '4182649256', 'pending'),
+(4, 'NARCISSE', 'narcotrop@gmail.com', '5762843823', 'Working'),
+(5, 'Jenabe', 'ciscodebordo@gtyz.com', '4823293823', 'Single');
 
 -- --------------------------------------------------------
 
@@ -62,14 +64,20 @@ CREATE TABLE `applicantjob` (
 --
 
 INSERT INTO `applicantjob` (`id`, `applicant_id`, `job_id`, `date`) VALUES
-(1, 1, 3, '2026-04-07 05:21:40'),
-(2, 1, 2, '2026-04-07 05:21:40'),
 (4, 1, 1, '2026-04-07 05:21:40'),
+(2, 1, 2, '2026-04-07 05:21:40'),
+(20, 1, 3, NULL),
 (5, 2, 1, '2026-04-07 05:21:40'),
-(6, 2, 3, '2026-04-07 05:21:40'),
-(7, 3, 3, '2026-04-07 05:21:40'),
+(21, 2, 3, NULL),
 (8, 3, 1, '2026-04-07 05:21:40'),
-(10, 3, 2, '2026-04-07 05:21:40');
+(10, 3, 2, '2026-04-07 05:21:40'),
+(22, 3, 3, NULL),
+(17, 4, 1, NULL),
+(18, 4, 2, NULL),
+(24, 4, 3, NULL),
+(14, 5, 1, '2026-04-17 02:32:32'),
+(15, 5, 2, '2026-04-23 02:33:03'),
+(23, 5, 3, NULL);
 
 -- --------------------------------------------------------
 
@@ -195,13 +203,13 @@ ALTER TABLE `resume`
 -- AUTO_INCREMENT pour la table `applicant`
 --
 ALTER TABLE `applicant`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT pour la table `applicantjob`
 --
 ALTER TABLE `applicantjob`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT pour la table `applications`
