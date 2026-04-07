@@ -1,0 +1,40 @@
+POST APPLICANT
+{ 
+  "name": "Rambo2",
+  "email": "asslrom@gmail.com",
+  "phone": "5122649853",
+  "status": "updating"   
+}
+
+
+POST a RESUME
+{
+  "id": 0,
+  "content": "Demande d'embauche",
+  "applicant": {
+    "id": 2       
+  }
+}
+
+
+POST an APPLICATION
+{
+  "id": 0,
+  "status": "Processing",
+  "position": "Human resource office",
+  "applicant": {
+    "id": 1       
+  }
+}
+
+POST an APPLICANTjOB
+{
+  "id": 0,
+  "applicant": {
+    "id": 1  
+  },
+  "job": {
+    "id": 3  
+  },
+  "data": "2026-04-07T01:21:40.538Z"
+}
